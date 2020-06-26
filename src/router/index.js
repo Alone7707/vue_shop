@@ -1,9 +1,16 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Login from "../components/Login";
+import Login from "../views/Login";
 import Home from "../views/Home";
+import Welcome from "../components/Welcome";
+import Users from "../components/user/Users";
 
 Vue.use(Router)
+
+const originalPush = Router.prototype.push
+Router.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err => err)
+}
 
 const router = new Router({
   routes: [
@@ -17,9 +24,16 @@ const router = new Router({
     },
     {
       path: '/home',
-      component: Home
+      component: Home,
+      redirect: '/welcome',
+      children: [
+          { path: '/welcome', component: Welcome},
+          { path: '/users', component: Users},
+
+          ]
     }
-  ]
+  ],
+  mode: 'history'
 })
 
 // 挂载路由导航守卫

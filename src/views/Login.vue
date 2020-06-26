@@ -65,7 +65,6 @@
           // 1.将登陆成功之后的token保存到客户端的sessionStorage中
           //  1.1 项目中除了登陆之外的其他API接口，必须再登陆之后才能访问
           //  1.2 token只应再当前网站打开期间生效，所以将token保存再sessionStorage中
-          console.log(res);
           window.sessionStorage.setItem('token', res.data.token)
           // 2.通过编程式导航跳转到后台主页，路由地址是home
           // this.$router.push('/home')
