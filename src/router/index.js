@@ -4,6 +4,13 @@ import Login from "../views/Login";
 import Home from "../views/Home";
 import Welcome from "../components/Welcome";
 import Users from "../components/Users";
+import Rights from "../components/Rights";
+import Roles from "../components/Roles";
+import Goods from "../components/Goods";
+import Params from "../components/Params";
+import Categories from "../components/Categories";
+import Orders from "../components/Orders";
+import Reports from "../components/Reports";
 
 Vue.use(Router)
 
@@ -29,7 +36,13 @@ const router = new Router({
       children: [
           { path: '/welcome', component: Welcome},
           { path: '/users', component: Users},
-
+          { path: '/rights', component: Rights},
+          { path: '/roles', component: Roles},
+          { path: '/goods', component: Goods},
+          { path: '/params', component: Params},
+          { path: '/categories', component: Categories},
+          { path: '/orders', component: Orders},
+          { path: '/reports', component: Reports}
           ]
     }
   ],
