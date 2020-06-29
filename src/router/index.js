@@ -3,12 +3,12 @@ import Router from 'vue-router'
 import Login from "../views/Login";
 import Home from "../views/Home";
 import Welcome from "../components/Welcome";
-import Users from "../components/Users";
-import Rights from "../components/Rights";
-import Roles from "../components/Roles";
+import Users from "../components/users/Users";
+import Rights from "../components/power/Rights";
+import Roles from "../components/power/Roles";
 import Goods from "../components/Goods";
 import Params from "../components/Params";
-import Categories from "../components/Categories";
+import Categories from "../components/goods/Categories";
 import Orders from "../components/Orders";
 import Reports from "../components/Reports";
 

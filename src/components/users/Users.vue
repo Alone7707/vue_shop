@@ -134,7 +134,7 @@
 </template>
 
 <script>
-  import Breadcrumb from "./common/Breadcrumb";
+  import Breadcrumb from "../common/Breadcrumb";
 
   export default {
     name: "Users",
