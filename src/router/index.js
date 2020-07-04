@@ -6,11 +6,10 @@ import Welcome from "../components/Welcome";
 import Users from "../components/users/Users";
 import Rights from "../components/power/Rights";
 import Roles from "../components/power/Roles";
-import Goods from "../components/Goods";
-import Params from "../components/Params";
+import Params from "../components/goods/Params";
 import Categories from "../components/goods/Categories";
-import Orders from "../components/Orders";
-import Reports from "../components/Reports";
+import GoodsList from "../components/goods/List"
+import Add from "../components/goods/Add";
 
 Vue.use(Router)
 
@@ -38,11 +37,10 @@ const router = new Router({
           { path: '/users', component: Users},
           { path: '/rights', component: Rights},
           { path: '/roles', component: Roles},
-          { path: '/goods', component: Goods},
           { path: '/params', component: Params},
           { path: '/categories', component: Categories},
-          { path: '/orders', component: Orders},
-          { path: '/reports', component: Reports}
+          { path: '/goods', component: GoodsList},
+          { path: '/goods/add', component: Add}
           ]
     }
   ],

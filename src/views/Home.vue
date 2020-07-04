@@ -115,7 +115,6 @@ export default {
   .el-header > div {
     display: flex;
     align-items: center;
-
   }
   .el-header > div > span {
     margin-left: 15px;
